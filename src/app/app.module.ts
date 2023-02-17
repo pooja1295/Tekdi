@@ -8,7 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './componenets/login/login.component';
 import { FetchDetailComponent } from './componenets/fetch-detail/fetch-detail.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './componenets/footer/footer.component';
+
 
 
 
