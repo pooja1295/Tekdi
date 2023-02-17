@@ -7,9 +7,15 @@ import {HttpClient} from '@angular/common/http';
 })
 export class CustomerServiceService {
 
+  url="http://jsonplaceholder.typicode.com/posts";
+
   constructor(private http:HttpClient) {
+ 
+ 
+  }
 
-    
+  users(){
 
-   }
+    return this.http.get(this.url);
+  }
 }

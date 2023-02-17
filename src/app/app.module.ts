@@ -9,6 +9,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './componenets/login/login.component';
 import { FetchDetailComponent } from './componenets/fetch-detail/fetch-detail.component';
 import { FooterComponent } from './componenets/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FakeApiDataComponent } from './componenets/fake-api-data/fake-api-data.component';
 
 
 
@@ -20,7 +22,8 @@ import { FooterComponent } from './componenets/footer/footer.component';
     RegisterComponent,
     LoginComponent,
     FetchDetailComponent,
-    FooterComponent
+    FooterComponent,
+    FakeApiDataComponent
     
   ],
   imports: [
@@ -28,6 +31,7 @@ import { FooterComponent } from './componenets/footer/footer.component';
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
+    HttpClientModule
   
   ],
   providers: [],
