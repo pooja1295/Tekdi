@@ -1,0 +1,18 @@
+.container{
+
+    width: 700px;
+    border-style: groove;
+    margin-top: 200px;
+    background-color: #ebf2fa;
+
+
+}
+.container img {
+    width: 100px;
+    margin-left: 250px;  
+    margin-right: auto;
+}
+
+.btn-lg{
+    background-color: #0e1c36;
+}

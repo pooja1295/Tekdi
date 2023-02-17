@@ -1,0 +1,9 @@
+.container{
+    border-style: double;
+    background-color: white ;
+    margin-top: 100px;
+    width: 800px;
+}
+.container h1{
+    text-align: center;
+}
