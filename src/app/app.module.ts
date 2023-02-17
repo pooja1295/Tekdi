@@ -7,19 +7,27 @@ import { RegisterComponent } from './componenets/register/register.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './componenets/login/login.component';
+import { FetchDetailComponent } from './componenets/fetch-detail/fetch-detail.component';
+import { FooterComponent } from './footer/footer.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    FetchDetailComponent,
+    FooterComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
