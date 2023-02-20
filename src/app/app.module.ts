@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './componenets/register/register.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './componenets/login/login.component';
 import { FetchDetailComponent } from './componenets/fetch-detail/fetch-detail.component';
 import { FooterComponent } from './componenets/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FakeApiDataComponent } from './componenets/fake-api-data/fake-api-data.component';
+import { Comp1Component } from './componenets/comp1/comp1.component';
+import { Comp2Component } from './componenets/comp2/comp2.component';
+import { ChildComponent } from './child/child.component';
 
 
 
@@ -23,7 +26,10 @@ import { FakeApiDataComponent } from './componenets/fake-api-data/fake-api-data.
     LoginComponent,
     FetchDetailComponent,
     FooterComponent,
-    FakeApiDataComponent
+    FakeApiDataComponent,
+    Comp1Component,
+    Comp2Component,
+    ChildComponent
     
   ],
   imports: [
@@ -31,7 +37,8 @@ import { FakeApiDataComponent } from './componenets/fake-api-data/fake-api-data.
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   
   ],
   providers: [],
