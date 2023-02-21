@@ -4,6 +4,7 @@ import { FakeApiDataComponent } from './componenets/fake-api-data/fake-api-data.
 import { FetchDetailComponent } from './componenets/fetch-detail/fetch-detail.component';
 import { FooterComponent } from './componenets/footer/footer.component';
 import { LoginComponent } from './componenets/login/login.component';
+import { ObservableandObserverComponent } from './componenets/observableand-observer/observableand-observer.component';
 import { RegisterComponent } from './componenets/register/register.component';
 
 
@@ -13,8 +14,9 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'fetch',component:FetchDetailComponent},
   {path:'footer',component:FooterComponent},
-  {path:'fake-Api',component:FakeApiDataComponent}
-
+  {path:'fake-Api',component:FakeApiDataComponent},
+  
+ 
 
 ];
 

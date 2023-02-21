@@ -17,6 +17,7 @@ import { ChildComponent } from './child/child.component';
 import { TwoWayBindingComponent } from './componenets/two-way-binding/two-way-binding.component';
 import { RedElDirective } from './red-el.directive';
 import { CustomdirectiveComponent } from './componenets/customdirective/customdirective.component';
+import { ObservableandObserverComponent } from './componenets/observableand-observer/observableand-observer.component';
 
 
 
@@ -35,7 +36,8 @@ import { CustomdirectiveComponent } from './componenets/customdirective/customdi
     ChildComponent,
     TwoWayBindingComponent,
     RedElDirective,
-    CustomdirectiveComponent
+    CustomdirectiveComponent,
+    ObservableandObserverComponent
     
   ],
   imports: [
