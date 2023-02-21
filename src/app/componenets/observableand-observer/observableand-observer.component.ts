@@ -14,7 +14,8 @@ export class ObservableandObserverComponent implements OnInit ,OnDestroy{
 
   //for unsubscribe
   counterObservable=interval(1000);
-  counterSub: any;
+  counterSub: Subscription | any;
+  userData:Subscription | any;
 
   constructor(private dataservice: ObservableandObserverserviceService) { }
  
@@ -24,23 +25,31 @@ export class ObservableandObserverComponent implements OnInit ,OnDestroy{
   ngOnInit(): void {
 
     //this is angular feature
-    this.dataservice.getUser().subscribe((users:any)=>{
+    this.userData=this.dataservice.getUser().subscribe((users:any)=>{
       this.test=users;
 
       console.log('this.test', this.test);
 
     })
 
+    //Unsubscribe Rest API
+    
+
+
+
+
+
 
     //To understand subscribe and unsubscribe taking here exapke
     //interval is observable of rxjs library
 
-    //this.counterObservable.subscribe((count)=>{
-    //console.log(count);
- //   })
+    this.counterSub=this.counterObservable.subscribe((count)=>{
+    console.log(count);
+     })
 }
 ngOnDestroy(){
   this.counterSub.unsubscribe();
+  this.userData.unsubscribe();
 }
 
 }
