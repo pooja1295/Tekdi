@@ -15,6 +15,7 @@ const routes: Routes = [
   {path:'fetch',component:FetchDetailComponent},
   {path:'footer',component:FooterComponent},
   {path:'fake-Api',component:FakeApiDataComponent},
+  {path:'userData',component:ObservableandObserverComponent} 
   
  
 

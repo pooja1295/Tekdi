@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { count } from 'console';
+import { interval, Subscription } from 'rxjs';
 import { ObservableandObserverserviceService } from 'src/app/services/observableand-observerservice.service';
 import { Users } from 'src/app/User';
 
@@ -7,21 +9,38 @@ import { Users } from 'src/app/User';
   templateUrl: './observableand-observer.component.html',
   styleUrls: ['./observableand-observer.component.css']
 })
-export class ObservableandObserverComponent implements OnInit {
+export class ObservableandObserverComponent implements OnInit ,OnDestroy{
   test: any;
 
-  constructor(private dataservice: ObservableandObserverserviceService) { }
+  //for unsubscribe
+  counterObservable=interval(1000);
+  counterSub: any;
 
-  //This is observer
+  constructor(private dataservice: ObservableandObserverserviceService) { }
+ 
+
+  //This is observer (not unsubscribe)
 
   ngOnInit(): void {
 
+    //this is angular feature
     this.dataservice.getUser().subscribe((users:any)=>{
       this.test=users;
 
       console.log('this.test', this.test);
 
     })
-  }
+
+
+    //To understand subscribe and unsubscribe taking here exapke
+    //interval is observable of rxjs library
+
+    //this.counterObservable.subscribe((count)=>{
+    //console.log(count);
+ //   })
+}
+ngOnDestroy(){
+  this.counterSub.unsubscribe();
+}
 
 }
