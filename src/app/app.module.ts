@@ -14,6 +14,9 @@ import { FakeApiDataComponent } from './componenets/fake-api-data/fake-api-data.
 import { Comp1Component } from './componenets/comp1/comp1.component';
 import { Comp2Component } from './componenets/comp2/comp2.component';
 import { ChildComponent } from './child/child.component';
+import { TwoWayBindingComponent } from './componenets/two-way-binding/two-way-binding.component';
+import { RedElDirective } from './red-el.directive';
+import { CustomdirectiveComponent } from './componenets/customdirective/customdirective.component';
 
 
 
@@ -29,7 +32,10 @@ import { ChildComponent } from './child/child.component';
     FakeApiDataComponent,
     Comp1Component,
     Comp2Component,
-    ChildComponent
+    ChildComponent,
+    TwoWayBindingComponent,
+    RedElDirective,
+    CustomdirectiveComponent
     
   ],
   imports: [

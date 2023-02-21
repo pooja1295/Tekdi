@@ -18,6 +18,7 @@ export class Comp1Component implements OnInit {
   onBtnclick(){
     //console.log(this.enteredText);
     this.data.raiseDataEmittterEvent(this.enteredText);
+    
 
 
   }

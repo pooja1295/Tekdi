@@ -12,6 +12,8 @@ import { SubjectobservableService } from './services/subjectobservable.service';
 })
 export class AppComponent {
   title = 'forms';
+
+  valueforchild=10;
   
   constructor(private data:SubjectobservableService)
   {
